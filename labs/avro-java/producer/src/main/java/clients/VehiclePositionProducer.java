@@ -16,7 +16,7 @@ public class VehiclePositionProducer {
 
         Properties settings = new Properties();
         settings.put("client.id", "vp-producer");
-        settings.put("bootstrap.servers", "kafka:9092");
+        settings.put("bootstrap.servers", "kafka-svc:9092");
         settings.put("key.serializer", "org.apache.kafka.common.serialization.StringSerializer");
         settings.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer");
 
